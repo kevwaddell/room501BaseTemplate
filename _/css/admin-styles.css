@@ -1,0 +1,25 @@
+#wp-admin-bar-wp-logo, #wp-admin-bar-comments, #wp-admin-bar-new-content {display: none;}
+
+.widefat th.column-active {width:7%; text-align: center; border-left: 1px solid #999;}
+.widefat td.active {text-align: center; vertical-align:middle; border-left: 1px solid #999;}
+.widefat td.active span {display:block; background-position: center center; background-repeat: no-repeat; line-height: 16px; text-indent: -9999px;}
+.widefat td.active span.tick {background-image: url(img/yes.png);}
+.widefat td.active span.cross {background-image: url(img/no.png);}
+
+.widefat th.column-event_active {width:7%; text-align: center; border-left: 1px solid #999;}
+.widefat td.event_active {text-align: center; vertical-align:middle; border-left: 1px solid #999;}
+.widefat td.event_active span {display:block; background-position: center center; background-repeat: no-repeat; line-height: 16px; text-indent: -9999px;}
+.widefat td.event_active span.tick {background-image: url(img/yes.png);}
+.widefat td.event_active span.cross {background-image: url(img/no.png);}
+
+/* DASHBORAD STYLES */
+#dsn_dashboard .site_note h4 { font-size: 30px; margin: 20px 0; line-height: 1.0em; text-align: center;}
+#dsn_dashboard .site_note h5 { font-size: 20px; margin-bottom: 10px; line-height: 1.4em; color: #999;}
+#dsn_dashboard .site_note ul.note-nav {float: left; padding-right: 20px ;margin-right: 20px; border-right: 1px solid #999;}
+#dsn_dashboard .site_note ul li.header { font-size: 15px; margin: 10px 0; line-height: 1.2em; color: #999; text-transform: uppercase;}
+#dsn_dashboard .site_note ul {margin-bottom: 10px;}
+#dsn_dashboard .site_note div.clear {clear: both; margin-top: 20px; padding-top: 20px; border-top: 2px solid #999;}
+.site_note .content a.download-link { margin: 0 auto 20px auto; font-size: 18px; background-color: #21759B; color: white; display: block; padding: 10px 0; width: 350px; text-align: center;}
+.site_note .content a.download-link:hover {background-color: #D54E21;}
+
+.instruction_content .site_note h4 {font-size: 1.5em; color: #464646; font-weight: normal; border-bottom: 1px dashed #666; padding-bottom: 10px}

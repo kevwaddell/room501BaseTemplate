@@ -4,6 +4,9 @@ add_action('manage_posts_custom_column', 'show_post_column', 10, 2);
 
 function add_custom_posts_column($defaults){
 	unset($defaults['comments']);
+	$defaults['author'] = __('Posted by');
+	$defaults['categories'] = __('Subjects');
+	$defaults['tags'] = __('Topics');
 	$defaults['thumb'] = __('Featured Image');
     $defaults['active'] = __('Published');
     return $defaults;

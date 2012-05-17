@@ -12,6 +12,10 @@
 .widefat td.event_active span.tick {background-image: url(img/yes.png);}
 .widefat td.event_active span.cross {background-image: url(img/no.png);}
 
+.widefat th.column-thumb {width:7%; text-align: center; border-left: 1px solid #999;}
+.widefat td.thumb {text-align: center; vertical-align:middle; border-left: 1px solid #999;}
+.widefat td.thumb img {width:80%; height: auto;}
+
 /* DASHBORAD STYLES */
 #dsn_dashboard .site_note h4 { font-size: 30px; margin: 20px 0; line-height: 1.0em; text-align: center;}
 #dsn_dashboard .site_note h5 { font-size: 20px; margin-bottom: 10px; line-height: 1.4em; color: #999;}

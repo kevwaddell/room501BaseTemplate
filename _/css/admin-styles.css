@@ -19,6 +19,7 @@
 /* DASHBORAD STYLES */
 #dsn_dashboard .site_note h4 { font-size: 30px; margin: 20px 0; line-height: 1.0em; text-align: center;}
 #dsn_dashboard .site_note h5 { font-size: 20px; margin-bottom: 10px; line-height: 1.4em; color: #999;}
+#dsn_dashboard .site_note p { font-size: 16px; margin: 0 0 20px 0; line-height: 1.0em; text-align: center;}
 #dsn_dashboard .site_note ul.note-nav {float: left; padding-right: 20px ;margin-right: 20px; border-right: 1px solid #999;}
 #dsn_dashboard .site_note ul li.header { font-size: 15px; margin: 10px 0; line-height: 1.2em; color: #999; text-transform: uppercase;}
 #dsn_dashboard .site_note ul {margin-bottom: 10px;}

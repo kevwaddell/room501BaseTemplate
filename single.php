@@ -4,7 +4,7 @@
 
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<h2 class="entry-title"><?php the_title(); ?></h2>
 
 			<div class="entry-content">
 				
@@ -18,14 +18,10 @@
 
 			</div>
 			
-			<?php edit_post_link('Edit this entry','','.'); ?>
-			
 		</article>
 
 	<?php comments_template(); ?>
 
 	<?php endwhile; endif; ?>
-	
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

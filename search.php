@@ -4,8 +4,6 @@
 
 		<h2>Search Results</h2>
 
-		<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
-
 		<?php while (have_posts()) : the_post(); ?>
 
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -24,14 +22,18 @@
 
 		<?php endwhile; ?>
 
-		<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
+		<?php wp_pagenavi(); ?>
 
 	<?php else : ?>
 
-		<h2>No posts found.</h2>
+		<article class="post">
+
+		<h2>Sorry no search results found.</h2>
+		
+		<p>You searched for " <?php the_search_query(); ?> ".</p>
+		
+		</article>
 
 	<?php endif; ?>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

@@ -9,14 +9,14 @@
 			<div class="entry-content">
 				
 				<?php the_content(); ?>
-
-				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
 				
-				<?php the_tags( 'Tags: ', ', ', ''); ?>
-			
-				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+				<?php the_tags( 'Tags: ', ', ', ''); ?>	
 
 			</div>
+			
+			<footer class="meta">
+				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+			</footer>
 			
 		</article>
 

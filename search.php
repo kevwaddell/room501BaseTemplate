@@ -5,16 +5,22 @@
 		<h2>Search Results</h2>
 
 		<?php while (have_posts()) : the_post(); ?>
+		
+		<?php 
+		$intro = get_field('intro', get_the_ID());
+		?>
 
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
 				<h2><?php the_title(); ?></h2>
 
-				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
-
 				<div class="entry">
 
+					<?php if ($intro) { ?>
+					<p><?php echo $intro; ?></p>
+					<?php } else { ?>
 					<?php the_excerpt(); ?>
+					<?php } ?>
 
 				</div>
 

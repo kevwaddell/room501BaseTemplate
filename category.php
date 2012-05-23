@@ -8,12 +8,22 @@
 
 			<?php while (have_posts()) : the_post(); ?>
 			
-				<article <?php post_class() ?>>
+			<?php 
+			$intro = get_field('intro', get_the_ID());
+			?>
+			
+				<article id="post-<?php the_ID(); ?>" <?php post_class() ?>>
 				
-						<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+						<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
 						<div class="entry">
+						
+							<?php if ($intro) { ?>
+							<p><?php echo $intro; ?></p>
+							<?php } else { ?>
 							<?php the_excerpt(); ?>
+							<?php } ?>
+
 						</div>
 
 				</article>
@@ -27,8 +37,7 @@
 		<article class="post">
 
 			<h2>Sorry</h2>
-		
-			<p>No posts found.</p>
+			<p>There is no news at the moment for <?php single_cat_title(); ?>.</p>
 		
 		</article>
 

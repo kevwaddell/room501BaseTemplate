@@ -86,6 +86,9 @@ include (TEMPLATEPATH . '/_/functions/admin-color-scheme-options.php');
 /* ADMIN META BOX POSITIONS */
 include (TEMPLATEPATH . '/_/functions/meta-box-positions.php');
 
+/* REMOVE META BOXES */
+include (TEMPLATEPATH . '/_/functions/remove-meta-boxes.php');
+
 
 /* TEST AREA -------------- */
 

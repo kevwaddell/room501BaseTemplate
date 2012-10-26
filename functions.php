@@ -87,6 +87,9 @@ include (TEMPLATEPATH . '/_/functions/meta-box-positions.php');
 /* REMOVE META BOXES */
 include (TEMPLATEPATH . '/_/functions/remove-meta-boxes.php');
 
+/* REMOVE ADMIN LOGO */
+include (TEMPLATEPATH . '/_/functions/remove-wp-logo.php');
+
 
 /* TEST AREA -------------- */
 

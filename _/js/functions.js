@@ -1,5 +1,6 @@
 // remap jQuery to $
-(function($){})(window.jQuery);
+(function($){
+
 
 
 /* trigger when page is ready */
@@ -8,6 +9,9 @@ $(document).ready(function (){
 	// your functions go here
 
 });
+
+
+})(window.jQuery);
 
 
 /* optional triggers
